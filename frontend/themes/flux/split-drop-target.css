@@ -1,0 +1,72 @@
+/*
+ * split-drop-target.css
+ */
+
+.split-drop-target-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+
+    --split-drop-zone-border-width: 30px;
+}
+
+
+.split-drop-target-overlay .split-drop-zone {
+    box-sizing: border-box;
+}
+
+.split-drop-target-overlay .split-drop-spacer {
+    box-sizing: border-box;
+    width: var(--split-drop-zone-border-width);
+    height: var(--split-drop-zone-border-width);
+    /*background-color: transparent;*/
+}
+
+
+.split-drop-target-overlay .split-drop-zone.top-center,
+.split-drop-target-overlay .split-drop-zone.bottom-center {
+    width: 100%;
+    height: var(--split-drop-zone-border-width);
+}
+
+.split-drop-target-overlay .split-drop-zone.middle-center {
+    width: 100%;
+    height: 100%;
+}
+
+.split-drop-target-overlay .split-drop-zone.middle-left,
+.split-drop-target-overlay .split-drop-zone.middle-right {
+    width: var(--split-drop-zone-border-width);
+    height: 100%;
+}
+
+
+.split-drop-target-overlay:hover .split-drop-zone {
+    background-color: rgba(0,0,0,0.025);
+    border: var(--lumo-contrast-20pct) dashed 2px;
+}
+
+.split-drop-target-overlay:hover .split-drop-zone.top-center {
+    border-bottom: none;
+}
+
+.split-drop-target-overlay:hover .split-drop-zone.middle-left {
+    border-right: none;
+}
+
+.split-drop-target-overlay:hover .split-drop-zone.middle-right {
+    border-left: none;
+}
+
+.split-drop-target-overlay:hover .split-drop-zone.bottom-center {
+    border-top: none;
+}
+
+.split-drop-target-overlay .split-drop-zone:hover {
+    background-color: rgba(0,0,255,0.10);
+}

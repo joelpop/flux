@@ -1,0 +1,39 @@
+/*
+ * above-below-drop-target.css
+ */
+
+.above-below-drop-target-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    visibility: var(--overlay-visibility, hidden);
+}
+
+.above-below-drop-target-overlay .above-below-drop-zone {
+}
+
+.above-below-drop-target-overlay .above-below-drop-zone.v-drag-over-target {
+    /*background-color: rgba(0,0,0,0.05);*/
+    background-color: transparent;
+}
+
+.above-below-drop-target-overlay .above-below-drop-zone.above-zone {
+    border-top: 2px solid rgba(0,0,0,0.05);
+}
+
+.above-below-drop-target-overlay .above-below-drop-zone.above-zone.v-drag-over-target {
+    border-top: 2px solid var(--lumo-primary-color);
+}
+
+.above-below-drop-target-overlay .above-below-drop-zone.below-zone {
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+
+.above-below-drop-target-overlay .above-below-drop-zone.below-zone.v-drag-over-target {
+    border-bottom: 2px solid var(--lumo-primary-color);
+}
