@@ -1,12 +1,13 @@
 package com.vaadin.flux.ui.component.toolgroup;
 
 import com.vaadin.flow.component.Composite;
+import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.icon.Icon;
 
 import java.util.List;
 
-public abstract class Tool extends Composite<Div> {
+public abstract class Tool extends Composite<Div> implements HasSize {
     private final String name;
     private final Icon icon;
     private final String helpText;

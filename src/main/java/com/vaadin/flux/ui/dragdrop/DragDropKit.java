@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
@@ -167,12 +168,10 @@ public final class DragDropKit extends LibraryClass {
         }
 
         dragSourceComponentOpt
-                // skip move operation if dragging onto self
-                .filter(dragComponent -> dragComponent != dropTargetComponent)
-                // skip move operation if dragging onto own overlay
-                .filter(dragComponent ->
-                        (dropTargetComponent instanceof DropTargetOverlay dropTargetOverlay &&
-                                !dropTargetOverlay.isOverlaying(dragComponent)))
+                // skip move operation if dragging onto self directly
+                .filter(dragComponent -> !Objects.equals(dragComponent, dropTargetComponent))
+                // skip move operation if dragging onto self via drop zone of own overlay
+                .filter(dragComponent -> !DropTargetOverlay.isOverlaying(dropTargetComponent, dragComponent))
                 // perform move operation
                 .ifPresent(dragComponent -> {
                     if (event.getDropEffect() == DropEffect.MOVE) {

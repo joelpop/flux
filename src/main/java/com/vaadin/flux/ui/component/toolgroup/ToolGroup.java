@@ -80,6 +80,7 @@ public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSi
         dragBar.add(iconBar);
 
         toolContent = new Div();
+        toolContent.setSizeFull();
 
         var content = getContent();
         content.setFlexDirection(FlexLayout.FlexDirection.COLUMN);

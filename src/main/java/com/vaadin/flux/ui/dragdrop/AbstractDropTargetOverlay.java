@@ -35,7 +35,8 @@ public abstract class AbstractDropTargetOverlay extends Composite<FlexLayout> im
         return Collections.unmodifiableSet(dropZones);
     }
 
-    protected void addDropZone(DropZone dropZone) {
+    @Override
+    public void addDropZone(DropZone dropZone) {
         dropZones.add(dropZone);
     }
 }

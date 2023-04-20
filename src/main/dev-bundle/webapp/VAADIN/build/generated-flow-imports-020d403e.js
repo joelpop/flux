@@ -1,8 +1,8 @@
-import{c as css$e,r as registerStyles$1,T as ThemableMixin,a as ThemePropertyMixin,b as render$1,h as html$1,D as Directive,n as nothing,P as PartType,d as noChange,e as directive,s as svg$6,f as color$h,t as typography,g as themeRegistry,u as unsafeCSS}from"./indexhtml-dd3d7c28.js";/**
+import{c as css$e,r as registerStyles$1,T as ThemableMixin,a as ThemePropertyMixin,b as render$1,h as html$1,D as Directive,n as nothing,P as PartType,d as noChange,e as directive,s as svg$6,f as color$h,t as typography,g as themeRegistry,u as unsafeCSS,L as LitElement}from"./indexhtml-b1f4b79b.js";/**
  * @license
  * Copyright (c) 2017 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
- */const template$c=document.createElement("template");template$c.innerHTML=`
+ */const template$b=document.createElement("template");template$b.innerHTML=`
   <style>
     @font-face {
       font-family: 'lumo-icons';
@@ -56,7 +56,7 @@ import{c as css$e,r as registerStyles$1,T as ThemableMixin,a as ThemePropertyMix
       --lumo-icons-user: "\\ea2a";
     }
   </style>
-`;document.head.appendChild(template$c.content);/**
+`;document.head.appendChild(template$b.content);/**
  * @license
  * Copyright (c) 2017 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
@@ -2429,7 +2429,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       margin-top: var(--lumo-space-xs) !important;
       margin-bottom: var(--lumo-space-xs) !important;
     }
-  `,{moduleId:"lumo-app-layout"});const template$b=document.createElement("template");template$b.innerHTML=`
+  `,{moduleId:"lumo-app-layout"});const template$a=document.createElement("template");template$a.innerHTML=`
   <style>
     /* Use units so that the values can be used in calc() */
     html {
@@ -2439,7 +2439,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       --safe-area-inset-left: env(safe-area-inset-left, 0px);
     }
   </style>
-`;document.head.appendChild(template$b.content);/**
+`;document.head.appendChild(template$a.content);/**
  * @license
  * Copyright (c) 2018 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
@@ -3133,7 +3133,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
  * @license
  * Copyright (c) 2020 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
- */const template$a=document.createElement("template");template$a.innerHTML=`
+ */const template$9=document.createElement("template");template$9.innerHTML=`
   <style>
     @font-face {
       font-family: 'vaadin-avatar-icons';
@@ -3142,7 +3142,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       font-style: normal;
     }
   </style>
-`;document.head.appendChild(template$a.content);/**
+`;document.head.appendChild(template$9.content);/**
  * @license
  * Copyright (c) 2020 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
@@ -6616,7 +6616,7 @@ ${this.outerHTML}`)}_parseBoardCols(i){const t=i.map(a=>a.getAttribute("board-co
  * @license
  * Copyright (c) 2016 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
- */const template$9=document.createElement("template");template$9.innerHTML=`
+ */const template$8=document.createElement("template");template$8.innerHTML=`
   <style>
     @font-face {
       font-family: 'vaadin-grid-sorter-icons';
@@ -6625,7 +6625,7 @@ ${this.outerHTML}`)}_parseBoardCols(i){const t=i.map(a=>a.getAttribute("board-co
       font-style: normal;
     }
   </style>
-`;document.head.appendChild(template$9.content);class GridSorter extends ThemableMixin(DirMixin(PolymerElement)){static get template(){return html`
+`;document.head.appendChild(template$8.content);class GridSorter extends ThemableMixin(DirMixin(PolymerElement)){static get template(){return html`
       <style>
         :host {
           display: inline-flex;
@@ -7593,7 +7593,7 @@ ${this.outerHTML}`)}_parseBoardCols(i){const t=i.map(a=>a.getAttribute("board-co
     :host([disabled]) * {
       color: var(--lumo-disabled-text-color) !important;
     }
-  `,{moduleId:"lumo-month-calendar"});const template$8=document.createElement("template");template$8.innerHTML=`
+  `,{moduleId:"lumo-month-calendar"});const template$7=document.createElement("template");template$7.innerHTML=`
   <style>
     @keyframes vaadin-date-picker-month-calendar-focus-date {
       50% {
@@ -7601,7 +7601,7 @@ ${this.outerHTML}`)}_parseBoardCols(i){const t=i.map(a=>a.getAttribute("board-co
       }
     }
   </style>
-`;document.head.appendChild(template$8.content);const datePicker=css$e`
+`;document.head.appendChild(template$7.content);const datePicker=css$e`
   :host {
     outline: none;
   }
@@ -9278,7 +9278,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
  * @license
  * Copyright (c) 2016 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
- */const template$7=document.createElement("template");template$7.innerHTML=`
+ */const template$6=document.createElement("template");template$6.innerHTML=`
   <style>
     @font-face {
       font-family: "vaadin-grid-tree-icons";
@@ -9287,7 +9287,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
       font-style: normal;
     }
   </style>
-`;document.head.appendChild(template$7.content);class GridTreeToggle extends ThemableMixin(DirMixin(PolymerElement)){static get template(){return html`
+`;document.head.appendChild(template$6.content);class GridTreeToggle extends ThemableMixin(DirMixin(PolymerElement)){static get template(){return html`
       <style>
         :host {
           display: inline-flex;
@@ -9472,7 +9472,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
  * @license
  * Copyright (c) 2015 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
- */const template$6=document.createElement("template");template$6.innerHTML=`<svg><defs>
+ */const template$5=document.createElement("template");template$5.innerHTML=`<svg><defs>
 <g id="vaadin:abacus"><path d="M0 0v16h16v-16h-16zM14 2v3h-0.1c-0.2-0.6-0.8-1-1.4-1s-1.2 0.4-1.4 1h-3.2c-0.2-0.6-0.7-1-1.4-1s-1.2 0.4-1.4 1h-0.2c-0.2-0.6-0.7-1-1.4-1s-1.2 0.4-1.4 1h-0.1v-3h12zM13.9 10c-0.2-0.6-0.8-1-1.4-1s-1.2 0.4-1.4 1h-0.2c-0.2-0.6-0.8-1-1.4-1s-1.2 0.4-1.4 1h-3.2c-0.2-0.6-0.7-1-1.4-1s-1.2 0.4-1.4 1h-0.1v-4h0.1c0.2 0.6 0.8 1 1.4 1s1.2-0.4 1.4-1h0.2c0.2 0.6 0.8 1 1.4 1s1.2-0.4 1.4-1h3.2c0.2 0.6 0.8 1 1.4 1s1.2-0.4 1.4-1h0.1l-0.1 4zM2 14v-3h0.1c0.2 0.6 0.8 1 1.4 1s1.2-0.4 1.4-1h3.2c0.2 0.6 0.8 1 1.4 1s1.2-0.4 1.4-1h0.2c0.2 0.6 0.8 1 1.4 1s1.2-0.4 1.4-1h0.1v3h-12z"></path></g>
 <g id="vaadin:absolute-position"><path d="M0 0v16h16v-16h-16zM15 15h-14v-6h3v1l3-2-3-2v1h-3v-6h6v3h-1l2 3 2-3h-1v-3h6v14z"></path></g>
 <g id="vaadin:academy-cap"><path d="M15.090 12.79c0.235-0.185 0.385-0.469 0.385-0.789 0-0.358-0.188-0.672-0.471-0.849l-0.004-5.822-1 0.67v5.15c-0.283 0.18-0.468 0.492-0.468 0.847 0 0.316 0.147 0.598 0.376 0.782l-0.378 0.502c-0.323 0.41-0.521 0.931-0.53 1.498l-0 1.222h0.81c0.002 0 0.004 0 0.005 0 0.411 0 0.757-0.282 0.853-0.664l0.331-1.336v2h1v-1.21c-0.009-0.569-0.207-1.090-0.534-1.505z"></path><path d="M8 0l-8 4 8 5 8-5-8-4z"></path><path d="M8 10l-5-3.33v1.71c0 0.91 2.94 3.62 5 3.62s5-2.71 5-3.62v-1.71z"></path></g>
@@ -10109,7 +10109,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
 <g id="vaadin:wrench"><path d="M15.5 13.4l-7.8-7.8c0.2-0.5 0.3-1 0.3-1.6 0-2.2-1.8-4-4-4-0.6 0-1.1 0.1-1.6 0.3l2.9 2.9-2.1 2.1-2.9-2.9c-0.2 0.5-0.3 1-0.3 1.6 0 2.2 1.8 4 4 4 0.6 0 1.1-0.1 1.6-0.3l7.8 7.8c0.6 0.6 1.5 0.6 2.1 0s0.6-1.5 0-2.1zM6.8 7.6l-1.4-1.4 0.9-0.9 1.4 1.4-0.9 0.9zM14.2 15c-0.4 0-0.8-0.3-0.8-0.8 0-0.4 0.3-0.8 0.8-0.8s0.8 0.3 0.8 0.8c0 0.5-0.3 0.8-0.8 0.8z"></path></g>
 <g id="vaadin:youtube-square"><path d="M7.9 6c0.2 0 0.3-0.2 0.3-0.5v-1.4c0-0.3-0.1-0.5-0.3-0.5s-0.3 0.2-0.3 0.5v1.4c0 0.3 0.1 0.5 0.3 0.5z"></path><path d="M7.1 11.9c-0.1 0.2-0.3 0.3-0.4 0.3s-0.1 0-0.1-0.1c0 0 0-0.1 0-0.2v-2.5h-0.6v2.6c0 0.2 0 0.4 0.1 0.5 0.1 0.2 0.2 0.2 0.4 0.2s0.4-0.1 0.7-0.4v0.4h0.6v-3.3h-0.7v2.5z"></path><path d="M3.8 8.9h0.7v3.8h0.7v-3.8h0.7v-0.7h-2.1z"></path><path d="M9.4 9.3c-0.2 0-0.4 0.2-0.6 0.4v-1.5h-0.6v4.4h0.6v-0.3c0.2 0.2 0.4 0.4 0.6 0.4s0.4-0.1 0.5-0.4c0-0.1 0.1-0.4 0.1-0.7v-1.3c0-0.3 0-0.5-0.1-0.7-0.1-0.1-0.2-0.3-0.5-0.3zM9.4 11.7c0 0.3-0.1 0.4-0.3 0.4-0.1 0-0.2 0-0.3-0.1v-2c0.1-0.1 0.2-0.1 0.3-0.1 0.2 0 0.3 0.2 0.3 0.5v1.3z"></path><path d="M11.3 9.3c-0.3 0-0.5 0.1-0.7 0.3-0.1 0.2-0.2 0.4-0.2 0.8v1.2c0 0.4 0.1 0.6 0.2 0.8 0.2 0.2 0.4 0.3 0.7 0.3s0.6-0.1 0.7-0.4c0.1-0.1 0.1-0.2 0.1-0.4 0-0.1 0-0.2 0-0.4v-0.1h-0.6c0 0.2 0 0.4 0 0.4 0 0.2-0.1 0.2-0.3 0.2s-0.3-0.2-0.3-0.5v-0.6h1.2v-0.7c0-0.4-0.1-0.6-0.2-0.8 0 0.1-0.3-0.1-0.6-0.1zM11.6 10.6h-0.6v-0.3c0-0.3 0.1-0.5 0.3-0.5s0.3 0.2 0.3 0.5v0.3z"></path><path d="M0 0v16h16v-16h-16zM9.3 3.1h0.6v2.5c0 0.1 0 0.2 0 0.2 0 0.1 0 0.2 0.1 0.2s0.2-0.1 0.4-0.3v-2.6h0.6v3.3h-0.6v-0.3c-0.2 0.3-0.5 0.4-0.7 0.4s-0.3-0.1-0.4-0.2c0-0.1-0.1-0.3-0.1-0.5v-2.7zM7 4.2c0-0.3 0-0.6 0.2-0.8s0.4-0.3 0.7-0.3c0.3 0 0.5 0.1 0.7 0.3 0.1 0.2 0.2 0.4 0.2 0.8v1.2c0 0.4-0.1 0.6-0.2 0.8-0.2 0.2-0.4 0.3-0.7 0.3s-0.5-0.1-0.7-0.3c-0.2-0.2-0.2-0.4-0.2-0.8v-1.2zM5.3 2l0.5 1.8 0.5-1.8h0.7l-0.8 2.7v1.8h-0.7v-1.8c-0.1-0.4-0.2-0.8-0.4-1.5-0.2-0.4-0.3-0.8-0.5-1.2h0.7zM12.8 12.9c-0.1 0.5-0.6 0.9-1.1 1-1.2 0.1-2.5 0.1-3.7 0.1s-2.5 0-3.7-0.1c-0.5-0.1-1-0.4-1.1-1-0.2-0.8-0.2-1.6-0.2-2.4 0-0.7 0-1.5 0.2-2.3 0.1-0.5 0.6-0.9 1.1-1 1.2-0.1 2.5-0.1 3.7-0.1s2.5 0 3.7 0.1c0.5 0.1 1 0.4 1.1 1 0.2 0.8 0.2 1.6 0.2 2.3 0 0.8 0 1.6-0.2 2.4z"></path></g>
 <g id="vaadin:youtube"><path d="M6.6 0h-0.9l-0.6 2.3-0.6-2.3h-1c0.2 0.6 0.4 1.1 0.6 1.7 0.3 0.8 0.5 1.5 0.5 1.9v2.4h0.9v-2.4l1.1-3.6zM9 4.5v-1.5c0-0.5-0.1-0.8-0.3-1.1s-0.5-0.4-0.9-0.4c-0.4 0-0.7 0.2-0.9 0.5-0.2 0.2-0.3 0.5-0.3 1v1.6c0 0.5 0.1 0.8 0.3 1 0.2 0.3 0.5 0.4 0.9 0.4s0.7-0.2 0.9-0.5c0.2-0.1 0.3-0.5 0.3-1zM8.2 4.7c0 0.4-0.1 0.6-0.4 0.6s-0.4-0.2-0.4-0.6v-1.9c0-0.4 0.1-0.6 0.4-0.6s0.4 0.2 0.4 0.6v1.9zM12 6v-4.5h-0.8v3.4c-0.2 0.3-0.3 0.4-0.5 0.4-0.1 0-0.2-0.1-0.2-0.2 0 0 0-0.1 0-0.3v-3.3h-0.8v3.5c0 0.3 0 0.5 0.1 0.7 0 0.2 0.2 0.3 0.5 0.3s0.6-0.2 0.9-0.5v0.5h0.8z"></path><path d="M12.4 10.5c-0.3 0-0.4 0.2-0.4 0.6v0.4h0.8v-0.4c0-0.4-0.1-0.6-0.4-0.6z"></path><path d="M9.5 10.5c-0.1 0-0.3 0.1-0.4 0.2v2.7c0.1 0.1 0.3 0.2 0.4 0.2 0.2 0 0.3-0.2 0.3-0.6v-1.9c0-0.4-0.1-0.6-0.3-0.6z"></path><path d="M14.4 8.3c-0.2-0.7-0.8-1.3-1.4-1.3-1.6-0.2-3.3-0.2-5-0.2s-3.3 0-5 0.2c-0.6 0-1.2 0.6-1.4 1.3-0.2 1-0.2 2.1-0.2 3.1s0 2.1 0.2 3.1c0.2 0.7 0.7 1.2 1.4 1.3 1.7 0.2 3.3 0.2 5 0.2s3.3 0 5-0.2c0.7-0.1 1.3-0.6 1.4-1.3 0.2-1 0.2-2.1 0.2-3.1s0-2.1-0.2-3.1zM5.2 9.2h-1v5.1h-0.9v-5.1h-0.9v-0.9h2.8v0.9zM7.6 14.3h-0.8v-0.5c-0.3 0.4-0.6 0.5-0.9 0.5s-0.4-0.1-0.5-0.3c0-0.1-0.1-0.3-0.1-0.7v-3.5h0.8v3.2c0 0.2 0 0.3 0 0.3 0 0.1 0.1 0.2 0.2 0.2 0.2 0 0.3-0.1 0.5-0.4v-3.3h0.8v4.5zM10.6 12.9c0 0.4 0 0.7-0.1 0.9-0.1 0.3-0.3 0.5-0.6 0.5s-0.6-0.2-0.8-0.5v0.4h-0.8v-5.9h0.8v1.9c0.3-0.3 0.5-0.5 0.8-0.5s0.5 0.2 0.6 0.5c0.1 0.2 0.1 0.5 0.1 0.9v1.8zM13.6 12.2h-1.6v0.8c0 0.4 0.1 0.6 0.4 0.6 0.2 0 0.3-0.1 0.4-0.3 0 0 0-0.2 0-0.5h0.8v0.1c0 0.3 0 0.4 0 0.5 0 0.2-0.1 0.3-0.2 0.5-0.2 0.3-0.5 0.5-1 0.5-0.4 0-0.7-0.2-1-0.5-0.2-0.2-0.3-0.6-0.3-1v-1.5c0-0.5 0.1-0.8 0.2-1 0.2-0.3 0.5-0.5 1-0.5 0.4 0 0.7 0.2 0.9 0.5 0.2 0.2 0.2 0.6 0.2 1v0.8z"></path></g>
-</defs></svg>`;Iconset.register("vaadin",16,template$6);/**
+</defs></svg>`;Iconset.register("vaadin",16,template$5);/**
  * @license
  * Copyright (c) 2021 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
@@ -10714,7 +10714,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
       color: inherit;
       margin: 0;
     }
-  `,{moduleId:"vaadin-login-overlay-wrapper-styles"});const template$5=html`
+  `,{moduleId:"vaadin-login-overlay-wrapper-styles"});const template$4=html`
   <section part="card">
     <div part="brand">
       <slot name="title">
@@ -10726,7 +10726,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
       <slot></slot>
     </div>
   </section>
-`;let memoizedTemplate$2;class LoginOverlayWrapper extends Overlay{static get is(){return"vaadin-login-overlay-wrapper"}static get properties(){return{title:{type:String},description:{type:String}}}static get template(){if(!memoizedTemplate$2){memoizedTemplate$2=super.template.cloneNode(!0);const i=template$5.content.querySelector("[part=card]"),t=memoizedTemplate$2.content.querySelector("#content");t.replaceChild(i,t.children[0])}return memoizedTemplate$2}}customElements.define(LoginOverlayWrapper.is,LoginOverlayWrapper);/**
+`;let memoizedTemplate$2;class LoginOverlayWrapper extends Overlay{static get is(){return"vaadin-login-overlay-wrapper"}static get properties(){return{title:{type:String},description:{type:String}}}static get template(){if(!memoizedTemplate$2){memoizedTemplate$2=super.template.cloneNode(!0);const i=template$4.content.querySelector("[part=card]"),t=memoizedTemplate$2.content.querySelector("#content");t.replaceChild(i,t.children[0])}return memoizedTemplate$2}}customElements.define(LoginOverlayWrapper.is,LoginOverlayWrapper);/**
  * @license
  * Copyright (c) 2018 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
@@ -12760,7 +12760,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
         var(--lumo-success-color)
       );
     }
-  `,{moduleId:"lumo-progress-bar"});const template$4=document.createElement("template");template$4.innerHTML=`
+  `,{moduleId:"lumo-progress-bar"});const template$3=document.createElement("template");template$3.innerHTML=`
   <style>
     @keyframes vaadin-progress-pulse3 {
       0% { opacity: 1; }
@@ -12773,7 +12773,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
       100% { opacity: 1; }
     }
   </style>
-`;document.head.appendChild(template$4.content);/**
+`;document.head.appendChild(template$3.content);/**
  * @license
  * Copyright (c) 2017 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
@@ -13359,7 +13359,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
  *
  * See https://vaadin.com/commercial-license-and-service-terms for the full
  * license.
- */const template$3=document.createElement("template");template$3.innerHTML=`
+ */const template$2=document.createElement("template");template$2.innerHTML=`
   <style>
     @font-face {
       font-family: 'vaadin-rte-icons';
@@ -13381,7 +13381,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
       --vaadin-rte-icons-undo: "\\ea0a";
     }
   </style>
-`;document.head.appendChild(template$3.content);const iconsStyles=css$e`
+`;document.head.appendChild(template$2.content);const iconsStyles=css$e`
   [part~='toolbar-button-align-center']::before {
     content: var(--vaadin-rte-icons-align-center);
   }
@@ -14969,7 +14969,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
  * @license
  * Copyright (c) 2016 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
- */const template$2=document.createElement("template");template$2.innerHTML=`
+ */const template$1=document.createElement("template");template$1.innerHTML=`
   <style>
     @font-face {
       font-family: 'vaadin-upload-icons';
@@ -14978,7 +14978,7 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
       font-style: normal;
     }
   </style>
-`;document.head.appendChild(template$2.content);/**
+`;document.head.appendChild(template$1.content);/**
  * @license
  * Copyright (c) 2016 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
@@ -15131,38 +15131,6 @@ Please wrap fields with a <vaadin-custom-field> instead.`);const t=i.find(r=>!!t
         capture$="[[capture]]"
       />
     `}static get is(){return"vaadin-upload"}static get properties(){return{nodrop:{type:Boolean,reflectToAttribute:!0,value:isTouch},target:{type:String,value:""},method:{type:String,value:"POST"},headers:{type:Object,value:{}},timeout:{type:Number,value:0},_dragover:{type:Boolean,value:!1,observer:"_dragoverChanged"},files:{type:Array,notify:!0,value:()=>[]},maxFiles:{type:Number,value:1/0},maxFilesReached:{type:Boolean,value:!1,notify:!0,readOnly:!0,reflectToAttribute:!0,computed:"_maxFilesAdded(maxFiles, files.length)"},accept:{type:String,value:""},maxFileSize:{type:Number,value:1/0},_dragoverValid:{type:Boolean,value:!1,observer:"_dragoverValidChanged"},formDataName:{type:String,value:"file"},noAuto:{type:Boolean,value:!1},withCredentials:{type:Boolean,value:!1},capture:String,i18n:{type:Object,value(){return{dropFiles:{one:"Drop file here",many:"Drop files here"},addFiles:{one:"Upload File...",many:"Upload Files..."},error:{tooManyFiles:"Too Many Files.",fileIsTooBig:"File is Too Big.",incorrectFileType:"Incorrect File Type."},uploading:{status:{connecting:"Connecting...",stalled:"Stalled",processing:"Processing File...",held:"Queued"},remainingTime:{prefix:"remaining time: ",unknown:"unknown remaining time"},error:{serverUnavailable:"Upload failed, please try again later",unexpectedServerError:"Upload failed due to server error",forbidden:"Upload forbidden"}},file:{retry:"Retry",start:"Start",remove:"Remove"},units:{size:["B","kB","MB","GB","TB","PB","EB","ZB","YB"]}}}},_addButton:{type:Object},_dropLabel:{type:Object},_fileList:{type:Object},_files:{type:Array}}}static get observers(){return["__updateAddButton(_addButton, maxFiles, i18n, maxFilesReached)","__updateDropLabel(_dropLabel, maxFiles, i18n)","__updateFileList(_fileList, files, i18n)"]}get __acceptRegexp(){if(!this.accept)return null;const i=this.accept.split(",").map(t=>{let r=t.trim();return r=r.replace(/[+.]/gu,"\\$&"),r.startsWith("\\.")&&(r=`.*${r}$`),r.replace(/\/\*/gu,"/.*")});return new RegExp(`^(${i.join("|")})$`,"iu")}ready(){super.ready(),this.addEventListener("dragover",this._onDragover.bind(this)),this.addEventListener("dragleave",this._onDragleave.bind(this)),this.addEventListener("drop",this._onDrop.bind(this)),this.addEventListener("file-retry",this._onFileRetry.bind(this)),this.addEventListener("file-abort",this._onFileAbort.bind(this)),this.addEventListener("file-start",this._onFileStart.bind(this)),this.addEventListener("file-reject",this._onFileReject.bind(this)),this.addEventListener("upload-start",this._onUploadStart.bind(this)),this.addEventListener("upload-success",this._onUploadSuccess.bind(this)),this.addEventListener("upload-error",this._onUploadError.bind(this)),this._addButtonController=new AddButtonController(this),this.addController(this._addButtonController),this._dropLabelController=new DropLabelController(this),this.addController(this._dropLabelController),this.addController(new SlotController(this,"file-list","vaadin-upload-file-list",{initializer:i=>{this._fileList=i}})),this.addController(new SlotController(this,"drop-label-icon","vaadin-upload-icon"))}_formatSize(i){if(typeof this.i18n.formatSize=="function")return this.i18n.formatSize(i);const t=this.i18n.units.sizeBase||1e3,r=~~(Math.log(i)/Math.log(t)),o=Math.max(0,Math.min(3,r-1));return`${parseFloat((i/t**r).toFixed(o))} ${this.i18n.units.size[r]}`}_splitTimeByUnits(i){const t=[60,60,24,1/0],r=[0];for(let o=0;o<t.length&&i>0;o++)r[o]=i%t[o],i=Math.floor(i/t[o]);return r}_formatTime(i,t){if(typeof this.i18n.formatTime=="function")return this.i18n.formatTime(i,t);for(;t.length<3;)t.push(0);return t.reverse().map(r=>(r<10?"0":"")+r).join(":")}_formatFileProgress(i){const t=i.loaded>0?this.i18n.uploading.remainingTime.prefix+i.remainingStr:this.i18n.uploading.remainingTime.unknown;return`${i.totalStr}: ${i.progress}% (${t})`}_maxFilesAdded(i,t){return i>=0&&t>=i}__updateAddButton(i,t,r,o){i&&(i.disabled=o,i===this._addButtonController.defaultNode&&(i.textContent=this._i18nPlural(t,r.addFiles)))}__updateDropLabel(i,t,r){i&&i===this._dropLabelController.defaultNode&&(i.textContent=this._i18nPlural(t,r.dropFiles))}__updateFileList(i,t,r){i&&(i.items=[...t],i.i18n=r)}_onDragover(i){i.preventDefault(),!this.nodrop&&!this._dragover&&(this._dragoverValid=!this.maxFilesReached,this._dragover=!0),i.dataTransfer.dropEffect=!this._dragoverValid||this.nodrop?"none":"copy"}_onDragleave(i){i.preventDefault(),this._dragover&&!this.nodrop&&(this._dragover=this._dragoverValid=!1)}_onDrop(i){this.nodrop||(i.preventDefault(),this._dragover=this._dragoverValid=!1,this._addFiles(i.dataTransfer.files))}_createXhr(){return new XMLHttpRequest}_configureXhr(i){if(typeof this.headers=="string")try{this.headers=JSON.parse(this.headers)}catch{this.headers=void 0}Object.entries(this.headers).forEach(([t,r])=>{i.setRequestHeader(t,r)}),this.timeout&&(i.timeout=this.timeout),i.withCredentials=this.withCredentials}_setStatus(i,t,r,o){i.elapsed=o,i.elapsedStr=this._formatTime(i.elapsed,this._splitTimeByUnits(i.elapsed)),i.remaining=Math.ceil(o*(t/r-1)),i.remainingStr=this._formatTime(i.remaining,this._splitTimeByUnits(i.remaining)),i.speed=~~(t/o/1024),i.totalStr=this._formatSize(t),i.loadedStr=this._formatSize(r),i.status=this._formatFileProgress(i)}uploadFiles(i=this.files){i&&!Array.isArray(i)&&(i=[i]),i=i.filter(t=>!t.complete),Array.prototype.forEach.call(i,this._uploadFile.bind(this))}_uploadFile(i){if(i.uploading)return;const t=Date.now(),r=i.xhr=this._createXhr();let o,a;r.upload.onprogress=c=>{clearTimeout(o),a=Date.now();const d=(a-t)/1e3,u=c.loaded,p=c.total,f=~~(u/p*100);i.loaded=u,i.progress=f,i.indeterminate=u<=0||u>=p,i.error?i.indeterminate=i.status=void 0:i.abort||(f<100?(this._setStatus(i,p,u,d),o=setTimeout(()=>{i.status=this.i18n.uploading.status.stalled,this._renderFileList()},2e3)):(i.loadedStr=i.totalStr,i.status=this.i18n.uploading.status.processing)),this._renderFileList(),this.dispatchEvent(new CustomEvent("upload-progress",{detail:{file:i,xhr:r}}))},r.onreadystatechange=()=>{if(r.readyState===4){if(clearTimeout(o),i.indeterminate=i.uploading=!1,i.abort||(i.status="",!this.dispatchEvent(new CustomEvent("upload-response",{detail:{file:i,xhr:r},cancelable:!0}))))return;r.status===0?i.error=this.i18n.uploading.error.serverUnavailable:r.status>=500?i.error=this.i18n.uploading.error.unexpectedServerError:r.status>=400&&(i.error=this.i18n.uploading.error.forbidden),i.complete=!i.error,this.dispatchEvent(new CustomEvent(`upload-${i.error?"error":"success"}`,{detail:{file:i,xhr:r}})),this._renderFileList()}};const s=new FormData;if(i.uploadTarget=i.uploadTarget||this.target||"",i.formDataName=this.formDataName,!this.dispatchEvent(new CustomEvent("upload-before",{detail:{file:i,xhr:r},cancelable:!0})))return;s.append(i.formDataName,i,i.name),r.open(this.method,i.uploadTarget,!0),this._configureXhr(r),i.status=this.i18n.uploading.status.connecting,i.uploading=i.indeterminate=!0,i.complete=i.abort=i.error=i.held=!1,r.upload.onloadstart=()=>{this.dispatchEvent(new CustomEvent("upload-start",{detail:{file:i,xhr:r}})),this._renderFileList()},this.dispatchEvent(new CustomEvent("upload-request",{detail:{file:i,xhr:r,formData:s},cancelable:!0}))&&r.send(s)}_retryFileUpload(i){this.dispatchEvent(new CustomEvent("upload-retry",{detail:{file:i,xhr:i.xhr},cancelable:!0}))&&this._uploadFile(i)}_abortFileUpload(i){this.dispatchEvent(new CustomEvent("upload-abort",{detail:{file:i,xhr:i.xhr},cancelable:!0}))&&(i.abort=!0,i.xhr&&i.xhr.abort(),this._removeFile(i))}_renderFileList(){this._fileList&&this._fileList.requestContentUpdate()}_addFiles(i){Array.prototype.forEach.call(i,this._addFile.bind(this))}_addFile(i){if(this.maxFilesReached){this.dispatchEvent(new CustomEvent("file-reject",{detail:{file:i,error:this.i18n.error.tooManyFiles}}));return}if(this.maxFileSize>=0&&i.size>this.maxFileSize){this.dispatchEvent(new CustomEvent("file-reject",{detail:{file:i,error:this.i18n.error.fileIsTooBig}}));return}const t=this.__acceptRegexp;if(t&&!(t.test(i.type)||t.test(i.name))){this.dispatchEvent(new CustomEvent("file-reject",{detail:{file:i,error:this.i18n.error.incorrectFileType}}));return}i.loaded=0,i.held=!0,i.status=this.i18n.uploading.status.held,this.files=[i,...this.files],this.noAuto||this._uploadFile(i)}_removeFile(i){this.files.indexOf(i)>-1&&(this.files=this.files.filter(t=>t!==i),this.dispatchEvent(new CustomEvent("file-remove",{detail:{file:i},bubbles:!0,composed:!0})))}_onAddFilesTouchEnd(i){i.preventDefault(),this._onAddFilesClick(i)}_onAddFilesClick(i){this.maxFilesReached||(i.stopPropagation(),this.$.fileInput.value="",this.$.fileInput.click())}_onFileInputChange(i){this._addFiles(i.target.files)}_onFileStart(i){this._uploadFile(i.detail.file)}_onFileRetry(i){this._retryFileUpload(i.detail.file)}_onFileAbort(i){this._abortFileUpload(i.detail.file)}_onFileReject(i){announce(`${i.detail.file.name}: ${i.detail.file.error}`,{mode:"alert"})}_onUploadStart(i){announce(`${i.detail.file.name}: 0%`,{mode:"alert"})}_onUploadSuccess(i){announce(`${i.detail.file.name}: 100%`,{mode:"alert"})}_onUploadError(i){announce(`${i.detail.file.name}: ${i.detail.file.error}`,{mode:"alert"})}_dragoverChanged(i){i?this.setAttribute("dragover",i):this.removeAttribute("dragover")}_dragoverValidChanged(i){i?this.setAttribute("dragover-valid",i):this.removeAttribute("dragover-valid")}_i18nPlural(i,t){return i===1?t.one:t.many}_isMultiple(i){return i!==1}}customElements.define(Upload.is,Upload);/**
- * @license
- * Copyright (c) 2017 - 2023 Vaadin Ltd.
- * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
- */const template$1=document.createElement("template");template$1.innerHTML=`
-  <style>
-    /* Use a stronger selector so that imports added later do not override the property values */
-    html:not(div) {
-      --lumo-size-xl: 3rem;
-      --lumo-size-l: 2.5rem;
-      --lumo-size-m: 2rem;
-      --lumo-size-s: 1.75rem;
-      --lumo-size-xs: 1.5rem;
-      --lumo-font-size: 1rem;
-      --lumo-font-size-xxxl: 1.75rem;
-      --lumo-font-size-xxl: 1.375rem;
-      --lumo-font-size-xl: 1.125rem;
-      --lumo-font-size-l: 1rem;
-      --lumo-font-size-m: 0.875rem;
-      --lumo-font-size-s: 0.8125rem;
-      --lumo-font-size-xs: 0.75rem;
-      --lumo-font-size-xxs: 0.6875rem;
-      --lumo-line-height-m: 1.4;
-      --lumo-line-height-s: 1.2;
-      --lumo-line-height-xs: 1.1;
-      --lumo-space-xl: 1.875rem;
-      --lumo-space-l: 1.25rem;
-      --lumo-space-m: 0.625rem;
-      --lumo-space-s: 0.3125rem;
-      --lumo-space-xs: 0.1875rem;
-    }
-  </style>
-`;document.head.appendChild(template$1.content);/**
  * @license
  * Copyright (c) 2017 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
@@ -15437,4 +15405,63 @@ northing meters`+n;var p=u/2,f=0,v=0,g,m,_,y,b;return p>0&&(g=1e5/Math.pow(10,p)
  *
  * See <https://vaadin.com/commercial-license-and-service-terms> for the full
  * license.
- */setUserProjection("EPSG:4326");(function(){function n(r){r.$connector={lookup:createLookup(),synchronize(o){const a={synchronize,lookup:this.lookup,mapElement:r,connector:r.$connector};o.forEach(s=>{s.type==="ol/Map"&&this.lookup.put(s.id,r.configuration),synchronize(s,a)})},forceRender(){this._forceRenderTimeout||(this._forceRenderTimeout=setTimeout(()=>{this._forceRenderTimeout=null,r.configuration.getLayers().getArray().forEach(o=>o.changed())}))}},r.configuration.on("moveend",o=>{const a=r.configuration.getView(),s=a.getCenter(),l=a.getRotation(),h=a.getZoom(),c=a.calculateExtent(),d=new CustomEvent("map-view-moveend",{detail:{center:s,rotation:l,zoom:h,extent:c}});r.dispatchEvent(d)}),r.configuration.on("singleclick",o=>{const a=o.coordinate,s=o.pixel,h=r.configuration.getFeaturesAtPixel(s).map(d=>{const u=getLayerForFeature(r.configuration.getLayers().getArray(),d);return{feature:d,layer:u}}),c=new CustomEvent("map-click",{detail:{coordinate:a,features:h,originalEvent:o.originalEvent}});if(r.dispatchEvent(c),h.length>0){const d=h[0],u=new CustomEvent("map-feature-click",{detail:{feature:d.feature,layer:d.layer,originalEvent:o.originalEvent}});r.dispatchEvent(u)}})}function i(r){setUserProjection(r)}function t(r,o){proj4.defs(r,o),register(proj4)}window.Vaadin.Flow.mapConnector={init:n,setUserProjection:i,defineProjection:t}})();const EASTERN_ARABIC_DIGIT_MAP={"\\u0660":"0","\\u0661":"1","\\u0662":"2","\\u0663":"3","\\u0664":"4","\\u0665":"5","\\u0666":"6","\\u0667":"7","\\u0668":"8","\\u0669":"9"};function escapeRegExp(n){return n.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}function parseEasternArabicDigits(n){return n.replace(/[\u0660-\u0669]/g,function(i){const t="\\u0"+i.charCodeAt(0).toString(16);return EASTERN_ARABIC_DIGIT_MAP[t]})}function getAmOrPmString(n,i){const t=i.toLocaleTimeString(n),r=/[^\d\u0660-\u0669]/,o=t.match(new RegExp(`${r.source}+$`,"g"))||t.match(new RegExp(`^${r.source}+`,"g"));return o&&o[0].trim()}function getSeparator(n){let i=TEST_PM_TIME.toLocaleTimeString(n);const t=getPmString(n);t&&i.startsWith(t)&&(i=i.replace(t,""));const r=i.match(/[^\u0660-\u0669\s\d]/);return r&&r[0]}function searchAmOrPmToken(n,i){if(!i)return null;const t=i.split(/\s*/).map(escapeRegExp).join("\\s*"),r=new RegExp(t,"i"),o=n.match(r);if(o)return o[0]}const TEST_PM_TIME=new Date("August 19, 1975 23:15:30"),TEST_AM_TIME=new Date("August 19, 1975 05:15:30");function getPmString(n){return getAmOrPmString(n,TEST_PM_TIME)}function getAmString(n){return getAmOrPmString(n,TEST_AM_TIME)}function parseDigitsIntoInteger(n){return parseInt(parseEasternArabicDigits(n))}function parseMillisecondsIntoInteger(n){return n=parseEasternArabicDigits(n),n.length===1?n+="00":n.length===2&&(n+="0"),parseInt(n)}function formatMilliseconds(n,i,t,r){let o=n;if(n.endsWith(t)?o=n.replace(" "+t,""):n.endsWith(r)&&(o=n.replace(" "+r,"")),i){let a=i<10?"0":"";a+=i<100?"0":"",a+=i,o+="."+a}else o+=".000";return n.endsWith(t)?o=o+" "+t:n.endsWith(r)&&(o=o+" "+r),o}(function(){const n=function(t){return window.Vaadin.Flow.tryCatchWrapper(t,"Vaadin Time Picker")};function i(t,r,o=0){t()?r():setTimeout(()=>i(t,r,200),o)}window.Vaadin.Flow.timepickerConnector={initLazy:t=>n(function(r){r.$connector||(r.$connector={},r.$connector.setLocale=n(function(o){let a;r.value&&r.value!==""&&(a=r.i18n.parseTime(r.value));try{TEST_PM_TIME.toLocaleTimeString(o)}catch{throw o="en-US",new Error("vaadin-time-picker: The locale "+o+" is not supported, falling back to default locale setting(en-US).")}const s=getPmString(o),l=getAmString(o),h=getSeparator(o),c=function(){return r.step&&r.step<60},d=function(){return r.step&&r.step<1};let u,p;r.i18n={formatTime:n(function(f){if(!f)return;const v=new Date;v.setHours(f.hours),v.setMinutes(f.minutes),v.setSeconds(f.seconds!==void 0?f.seconds:0);let g=v.toLocaleTimeString(o,{hour:"numeric",minute:"numeric",second:c()?"numeric":void 0});return d()&&(g=formatMilliseconds(g,f.milliseconds,l,s)),g}),parseTime:n(function(f){if(f&&f===u&&p)return p;if(!f)return;const v=searchAmOrPmToken(f,l),g=searchAmOrPmToken(f,s),m=f.replace(v||"","").replace(g||"","").trim(),_=new RegExp("([\\d\\u0660-\\u0669]){1,2}(?:"+h+")?","g");let y=_.exec(m);if(y){y=parseDigitsIntoInteger(y[0].replace(h,"")),v!==g&&(y===12&&v&&(y=0),y!==12&&g&&(y+=12));const b=_.exec(m),x=b&&_.exec(m),M=/[[\.][\d\u0660-\u0669]{1,3}$/;let C=x&&d()&&M.exec(m);return C&&C.index<=x.index&&(C=void 0),p=y!==void 0&&{hours:y,minutes:b?parseDigitsIntoInteger(b[0].replace(h,"")):0,seconds:x?parseDigitsIntoInteger(x[0].replace(h,"")):0,milliseconds:b&&x&&C?parseMillisecondsIntoInteger(C[0].replace(".","")):0},u=f,p}})},a&&i(()=>r.$,()=>{const f=r.i18n.formatTime(a);r.inputElement.value!==f&&(r.inputElement.value=f,r.$.comboBox.value=f)})}))})(t)}})();window.Vaadin.Flow.virtualListConnector={initLazy:function(n){if(n.$connector)return;const i=20;let t=[0,0];n.$connector={},n.$connector.placeholderItem={__placeholder:!0};const r=function(){const a=[...n.children].filter(d=>"__virtualListIndex"in d).map(d=>d.__virtualListIndex),s=Math.min(...a),l=Math.max(...a);let h=Math.max(0,s-i),c=Math.min(l+i,n.items.length);if(t[0]!=h||t[1]!=c){t=[h,c];const d=1+c-h;n.$server.setRequestedRange(h,d)}},o=function(){n.__requestDebounce=Debouncer.debounce(n.__requestDebounce,timeOut$1.after(50),r)};requestAnimationFrame(()=>r),n.patchVirtualListRenderer=function(){if(!n.renderer||n.renderer.__virtualListConnectorPatched)return;const a=n.renderer,s=(l,h,c)=>{l.__virtualListIndex=c.index,c.item===void 0?h.$connector.placeholderElement?l.__hasComponentRendererPlaceholder||(l.innerHTML="",delete l._$litPart$,l.appendChild(h.$connector.placeholderElement.cloneNode(!0)),l.__hasComponentRendererPlaceholder=!0):a.call(h,l,h,{...c,item:h.$connector.placeholderItem}):(l.__hasComponentRendererPlaceholder&&(l.innerHTML="",l.__hasComponentRendererPlaceholder=!1),a.call(h,l,h,c)),o()};s.__virtualListConnectorPatched=!0,s.__rendererId=a.__rendererId,n.renderer=s},n._createPropertyObserver("renderer","patchVirtualListRenderer",!0),n.patchVirtualListRenderer(),n.items=[],n.$connector.set=function(a,s){n.items.splice(a,s.length,...s),n.items=[...n.items]},n.$connector.clear=function(a,s){const l=Math.min(s,n.items.length-a);n.$connector.set(a,[...Array(l)])},n.$connector.updateData=function(a){const s=a.reduce((l,h)=>(l[h.key]=h,l),{});n.items=n.items.map(l=>l&&(s[l.key]||l))},n.$connector.updateSize=function(a){const s=a-n.items.length;s>0?n.items=[...n.items,...Array(s)]:s<0&&(n.items=n.items.slice(0,a))},n.$connector.setPlaceholderItem=function(a={},s){a.__placeholder=!0,n.$connector.placeholderItem=a;const l=Object.entries(a).find(([h])=>h.endsWith("_nodeid"));n.$connector.placeholderElement=l?Vaadin.Flow.clients[s].getByNodeId(l[1]):null}}};const addCssBlock=function(n,i=!1){const t=document.createElement("template");t.innerHTML=n,document.head[i?"insertBefore":"appendChild"](t.content,document.head.firstChild)};export{addCssBlock};
+ */setUserProjection("EPSG:4326");(function(){function n(r){r.$connector={lookup:createLookup(),synchronize(o){const a={synchronize,lookup:this.lookup,mapElement:r,connector:r.$connector};o.forEach(s=>{s.type==="ol/Map"&&this.lookup.put(s.id,r.configuration),synchronize(s,a)})},forceRender(){this._forceRenderTimeout||(this._forceRenderTimeout=setTimeout(()=>{this._forceRenderTimeout=null,r.configuration.getLayers().getArray().forEach(o=>o.changed())}))}},r.configuration.on("moveend",o=>{const a=r.configuration.getView(),s=a.getCenter(),l=a.getRotation(),h=a.getZoom(),c=a.calculateExtent(),d=new CustomEvent("map-view-moveend",{detail:{center:s,rotation:l,zoom:h,extent:c}});r.dispatchEvent(d)}),r.configuration.on("singleclick",o=>{const a=o.coordinate,s=o.pixel,h=r.configuration.getFeaturesAtPixel(s).map(d=>{const u=getLayerForFeature(r.configuration.getLayers().getArray(),d);return{feature:d,layer:u}}),c=new CustomEvent("map-click",{detail:{coordinate:a,features:h,originalEvent:o.originalEvent}});if(r.dispatchEvent(c),h.length>0){const d=h[0],u=new CustomEvent("map-feature-click",{detail:{feature:d.feature,layer:d.layer,originalEvent:o.originalEvent}});r.dispatchEvent(u)}})}function i(r){setUserProjection(r)}function t(r,o){proj4.defs(r,o),register(proj4)}window.Vaadin.Flow.mapConnector={init:n,setUserProjection:i,defineProjection:t}})();const EASTERN_ARABIC_DIGIT_MAP={"\\u0660":"0","\\u0661":"1","\\u0662":"2","\\u0663":"3","\\u0664":"4","\\u0665":"5","\\u0666":"6","\\u0667":"7","\\u0668":"8","\\u0669":"9"};function escapeRegExp(n){return n.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}function parseEasternArabicDigits(n){return n.replace(/[\u0660-\u0669]/g,function(i){const t="\\u0"+i.charCodeAt(0).toString(16);return EASTERN_ARABIC_DIGIT_MAP[t]})}function getAmOrPmString(n,i){const t=i.toLocaleTimeString(n),r=/[^\d\u0660-\u0669]/,o=t.match(new RegExp(`${r.source}+$`,"g"))||t.match(new RegExp(`^${r.source}+`,"g"));return o&&o[0].trim()}function getSeparator(n){let i=TEST_PM_TIME.toLocaleTimeString(n);const t=getPmString(n);t&&i.startsWith(t)&&(i=i.replace(t,""));const r=i.match(/[^\u0660-\u0669\s\d]/);return r&&r[0]}function searchAmOrPmToken(n,i){if(!i)return null;const t=i.split(/\s*/).map(escapeRegExp).join("\\s*"),r=new RegExp(t,"i"),o=n.match(r);if(o)return o[0]}const TEST_PM_TIME=new Date("August 19, 1975 23:15:30"),TEST_AM_TIME=new Date("August 19, 1975 05:15:30");function getPmString(n){return getAmOrPmString(n,TEST_PM_TIME)}function getAmString(n){return getAmOrPmString(n,TEST_AM_TIME)}function parseDigitsIntoInteger(n){return parseInt(parseEasternArabicDigits(n))}function parseMillisecondsIntoInteger(n){return n=parseEasternArabicDigits(n),n.length===1?n+="00":n.length===2&&(n+="0"),parseInt(n)}function formatMilliseconds(n,i,t,r){let o=n;if(n.endsWith(t)?o=n.replace(" "+t,""):n.endsWith(r)&&(o=n.replace(" "+r,"")),i){let a=i<10?"0":"";a+=i<100?"0":"",a+=i,o+="."+a}else o+=".000";return n.endsWith(t)?o=o+" "+t:n.endsWith(r)&&(o=o+" "+r),o}(function(){const n=function(t){return window.Vaadin.Flow.tryCatchWrapper(t,"Vaadin Time Picker")};function i(t,r,o=0){t()?r():setTimeout(()=>i(t,r,200),o)}window.Vaadin.Flow.timepickerConnector={initLazy:t=>n(function(r){r.$connector||(r.$connector={},r.$connector.setLocale=n(function(o){let a;r.value&&r.value!==""&&(a=r.i18n.parseTime(r.value));try{TEST_PM_TIME.toLocaleTimeString(o)}catch{throw o="en-US",new Error("vaadin-time-picker: The locale "+o+" is not supported, falling back to default locale setting(en-US).")}const s=getPmString(o),l=getAmString(o),h=getSeparator(o),c=function(){return r.step&&r.step<60},d=function(){return r.step&&r.step<1};let u,p;r.i18n={formatTime:n(function(f){if(!f)return;const v=new Date;v.setHours(f.hours),v.setMinutes(f.minutes),v.setSeconds(f.seconds!==void 0?f.seconds:0);let g=v.toLocaleTimeString(o,{hour:"numeric",minute:"numeric",second:c()?"numeric":void 0});return d()&&(g=formatMilliseconds(g,f.milliseconds,l,s)),g}),parseTime:n(function(f){if(f&&f===u&&p)return p;if(!f)return;const v=searchAmOrPmToken(f,l),g=searchAmOrPmToken(f,s),m=f.replace(v||"","").replace(g||"","").trim(),_=new RegExp("([\\d\\u0660-\\u0669]){1,2}(?:"+h+")?","g");let y=_.exec(m);if(y){y=parseDigitsIntoInteger(y[0].replace(h,"")),v!==g&&(y===12&&v&&(y=0),y!==12&&g&&(y+=12));const b=_.exec(m),x=b&&_.exec(m),M=/[[\.][\d\u0660-\u0669]{1,3}$/;let C=x&&d()&&M.exec(m);return C&&C.index<=x.index&&(C=void 0),p=y!==void 0&&{hours:y,minutes:b?parseDigitsIntoInteger(b[0].replace(h,"")):0,seconds:x?parseDigitsIntoInteger(x[0].replace(h,"")):0,milliseconds:b&&x&&C?parseMillisecondsIntoInteger(C[0].replace(".","")):0},u=f,p}})},a&&i(()=>r.$,()=>{const f=r.i18n.formatTime(a);r.inputElement.value!==f&&(r.inputElement.value=f,r.$.comboBox.value=f)})}))})(t)}})();window.Vaadin.Flow.virtualListConnector={initLazy:function(n){if(n.$connector)return;const i=20;let t=[0,0];n.$connector={},n.$connector.placeholderItem={__placeholder:!0};const r=function(){const a=[...n.children].filter(d=>"__virtualListIndex"in d).map(d=>d.__virtualListIndex),s=Math.min(...a),l=Math.max(...a);let h=Math.max(0,s-i),c=Math.min(l+i,n.items.length);if(t[0]!=h||t[1]!=c){t=[h,c];const d=1+c-h;n.$server.setRequestedRange(h,d)}},o=function(){n.__requestDebounce=Debouncer.debounce(n.__requestDebounce,timeOut$1.after(50),r)};requestAnimationFrame(()=>r),n.patchVirtualListRenderer=function(){if(!n.renderer||n.renderer.__virtualListConnectorPatched)return;const a=n.renderer,s=(l,h,c)=>{l.__virtualListIndex=c.index,c.item===void 0?h.$connector.placeholderElement?l.__hasComponentRendererPlaceholder||(l.innerHTML="",delete l._$litPart$,l.appendChild(h.$connector.placeholderElement.cloneNode(!0)),l.__hasComponentRendererPlaceholder=!0):a.call(h,l,h,{...c,item:h.$connector.placeholderItem}):(l.__hasComponentRendererPlaceholder&&(l.innerHTML="",l.__hasComponentRendererPlaceholder=!1),a.call(h,l,h,c)),o()};s.__virtualListConnectorPatched=!0,s.__rendererId=a.__rendererId,n.renderer=s},n._createPropertyObserver("renderer","patchVirtualListRenderer",!0),n.patchVirtualListRenderer(),n.items=[],n.$connector.set=function(a,s){n.items.splice(a,s.length,...s),n.items=[...n.items]},n.$connector.clear=function(a,s){const l=Math.min(s,n.items.length-a);n.$connector.set(a,[...Array(l)])},n.$connector.updateData=function(a){const s=a.reduce((l,h)=>(l[h.key]=h,l),{});n.items=n.items.map(l=>l&&(s[l.key]||l))},n.$connector.updateSize=function(a){const s=a-n.items.length;s>0?n.items=[...n.items,...Array(s)]:s<0&&(n.items=n.items.slice(0,a))},n.$connector.setPlaceholderItem=function(a={},s){a.__placeholder=!0,n.$connector.placeholderItem=a;const l=Object.entries(a).find(([h])=>h.endsWith("_nodeid"));n.$connector.placeholderElement=l?Vaadin.Flow.clients[s].getByNodeId(l[1]):null}}};class AroundDropTargetOverlay extends LitElement{static get styles(){return css$e`
+          :host {
+            --overlay-visibility: hidden;
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999999;
+            visibility: var(--overlay-visibility, hidden);
+          }
+          
+          .around-overlay {
+            position: relative;
+            height: 100%;
+            width: 100%;
+          }
+
+          .drop-zone {
+          }
+
+          .drop-zone.v-drag-over-target {
+            fill: yellow;
+          }
+
+          svg {
+            stroke: black;
+          }
+        `}render(){return html$1`
+            <svg class="around-overlay">
+
+                <svg viewbox="0 0 100 50" preserveAspectRatio="xMidYMin">
+                    <path class="drop-zone above-zone" d="M 0,0
+                           L 100,0 50,50
+                           z" fill="rgba(0,127,255,0.5)" />
+                </svg>
+
+                <svg viewbox="0 0 50 100" preserveAspectRatio="xMinYMid">
+                    <path class="drop-zone before-zone" d="M 0,0
+                            L 50,50 0,100
+                            z" fill="rgba(255,0,127,0.5)" />
+                </svg>
+
+                <svg viewbox="0 0 50 100" preserveAspectRatio="xMaxYMid">
+                    <path class="drop-zone after-zone" d="M 50,0
+                           L 50,100 0,50
+                           z" fill="rgba(0,255,127,0.5)" />
+                </svg>
+
+                <svg viewbox="0 0 100 50" preserveAspectRatio="xMidYMax">
+                    <path class="drop-zone below-zone" d="M 0,50
+                           L 50,0 100,50
+                           z" fill="rgba(255,127,0,0.5)" />
+                </svg>
+
+            </svg>
+        `}}customElements.define("around-drop-target-overlay",AroundDropTargetOverlay);const addCssBlock=function(n,i=!1){const t=document.createElement("template");t.innerHTML=n,document.head[i?"insertBefore":"appendChild"](t.content,document.head.firstChild)};export{addCssBlock};
