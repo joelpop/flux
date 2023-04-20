@@ -225,7 +225,6 @@
   "@vaadin/time-picker/theme/lumo/vaadin-time-picker.js",
   "@vaadin/upload/theme/lumo/vaadin-upload.js",
   "@vaadin/vaadin-lumo-styles/color.js",
-  "@vaadin/vaadin-lumo-styles/presets/compact.js",
   "@vaadin/vaadin-lumo-styles/sizing.js",
   "@vaadin/vaadin-lumo-styles/spacing.js",
   "@vaadin/vaadin-lumo-styles/style.js",
@@ -252,9 +251,11 @@
   "Frontend/generated/jar-resources/vaadin-grid-flow-selection-column.js",
   "Frontend/generated/jar-resources/vaadin-map/mapConnector.js",
   "Frontend/generated/jar-resources/vaadin-time-picker/timepickerConnector.js",
-  "Frontend/generated/jar-resources/virtualListConnector.js"
+  "Frontend/generated/jar-resources/virtualListConnector.js",
+  "Frontend/src/around-drop-target-overlay.ts"
  ],
  "frontendHashes": {
+  "src/around-drop-target-overlay.ts": "e297df9ad3a962b0596b10377b5576111c4eeff9c92cfaec3cea924c3c5251a1",
   "comboBoxConnector.js": "1d004c3dae9c76f8bcc68678abe1b8f7bdc8b456f5c9c4c7f190df8ed25d66cd",
   "contextMenuConnector.js": "25a200f8086461635ddd92316ebeb5a868294c8650a190efbae120edb1088f4f",
   "contextMenuTargetConnector.js": "870f67643988dd5618c247bd3c28d843f70aa026ee89f44c3c7556b5e70856af",
@@ -280,7 +281,7 @@
   "flux": "{\n  \"lumoImports\" : [ \"typography\", \"color\", \"spacing\", \"badge\", \"utility\" ]\n}"
  },
  "entryScripts": [
-  "VAADIN/build/indexhtml-dd3d7c28.js"
+  "VAADIN/build/indexhtml-b1f4b79b.js"
  ],
  "webComponents": [],
  "packageJsonHash": "dc4ed1948e335019ca19fb8dde48f58266bb3b5796934c011779c53d6e803ac1"
