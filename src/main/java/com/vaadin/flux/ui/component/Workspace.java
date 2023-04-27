@@ -3,7 +3,7 @@ package com.vaadin.flux.ui.component;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.HasSize;
-import com.vaadin.flow.component.html.Div;
+import com.vaadin.flow.component.orderedlayout.FlexLayout;
 import com.vaadin.flux.ui.component.editor.SourceEditor;
 import com.vaadin.flux.ui.component.editor.VisualEditor;
 import com.vaadin.flux.ui.component.editorgroup.EditorGroup;
@@ -58,7 +58,7 @@ import com.vaadin.flux.ui.tool.*;
  *
  * </pre>
  */
-public class Workspace extends Composite<Div> implements HasSize {
+public class Workspace extends Composite<FlexLayout> implements HasSize {
 
     public Workspace() {
         EditorGroup editorGroup;

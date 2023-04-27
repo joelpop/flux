@@ -43,9 +43,9 @@ public class OntoDropTargetOverlay extends AbstractDropTargetOverlay {
         ontoDiv.addClassNames(DROP_ZONE_CLASS_NAME, "onto-zone");
         ontoDiv.setSizeFull();
 
-        var overlay = getContent();
-        overlay.setSizeFull();
-        overlay.add(ontoDiv);
+        var content = getContent();
+        content.setSizeFull();
+        content.add(ontoDiv);
 
         addDropZone(new DropZone(ontoDiv, ontoConsumer));
     }

@@ -15,8 +15,8 @@ import com.vaadin.flux.ui.component.closetab.CloseTab;
 import com.vaadin.flux.ui.component.closetab.CloseTabs;
 import com.vaadin.flux.ui.component.split.Split;
 import com.vaadin.flux.ui.component.split.SplitItem;
-import com.vaadin.flux.ui.dragdrop.overlay.BeforeAfterDropTargetOverlay;
 import com.vaadin.flux.ui.dragdrop.DragDropKit;
+import com.vaadin.flux.ui.dragdrop.overlay.BeforeAfterDropTargetOverlay;
 import com.vaadin.flux.ui.dragdrop.overlay.OntoDropTargetOverlay;
 
 import java.util.Arrays;
@@ -126,8 +126,6 @@ public class EditorGroup extends Composite<FlexLayout> implements SplitItem, Has
         private static final String VISIBILITY_CLASS_NAME = "onto-drop-target-editorbar";
 
         public DragBar() {
-            addClassNames(VISIBILITY_CLASS_NAME);
-
             OntoDropTargetOverlay.initForMoveDrop(this, EditorTab.class,
                     VISIBILITY_CLASS_NAME, this::addTab);
         }

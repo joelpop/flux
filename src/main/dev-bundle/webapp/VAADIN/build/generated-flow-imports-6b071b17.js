@@ -1,4 +1,4 @@
-import{c as css$e,r as registerStyles$1,T as ThemableMixin,a as ThemePropertyMixin,b as render$1,h as html$1,D as Directive,n as nothing,P as PartType,d as noChange,e as directive,s as svg$6,f as color$h,t as typography,g as themeRegistry,u as unsafeCSS,L as LitElement}from"./indexhtml-b1f4b79b.js";/**
+import{c as css$e,r as registerStyles$1,T as ThemableMixin,a as ThemePropertyMixin,b as render$1,h as html$1,D as Directive,n as nothing,P as PartType,d as noChange,e as directive,s as svg$6,f as color$h,t as typography,g as themeRegistry,u as unsafeCSS,L as LitElement}from"./indexhtml-f79ae6ff.js";/**
  * @license
  * Copyright (c) 2017 - 2023 Vaadin Ltd.
  * This program is available under Apache License Version 2.0, available at https://vaadin.com/license/
@@ -15419,49 +15419,93 @@ northing meters`+n;var p=u/2,f=0,v=0,g,m,_,y,b;return p>0&&(g=1e5/Math.pow(10,p)
             z-index: 999999;
             visibility: var(--overlay-visibility, hidden);
           }
-          
-          .around-overlay {
+
+          #around-overlay {
+            --top-left: calc(var(--around-overlay-min-dim) * 1px / 2);
+            --bottom-right: calc(100% - var(--top-left));
+            
             position: relative;
-            height: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
             width: 100%;
+            height: 100%;
           }
 
           .drop-zone {
+            box-sizing: border-box;
+            position: absolute;
+            opacity: 0.2;
           }
 
-          .drop-zone.v-drag-over-target {
-            fill: yellow;
+          #before-zone {
+            left: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            clip-path: polygon(0 0, var(--top-left) var(--top-left), var(--top-left) var(--bottom-right), 0 100%);
+            border-left: 5px solid lightgray;
+            background-color: green;
           }
 
-          svg {
-            stroke: black;
+          #above-zone {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(0 0, var(--top-left) var(--top-left), var(--bottom-right) var(--top-left), 100% 0);
+            border-top: 5px solid lightgray;
+            background-color: purple;
           }
-        `}render(){return html$1`
-            <svg class="around-overlay">
 
-                <svg viewbox="0 0 100 50" preserveAspectRatio="xMidYMin">
-                    <path class="drop-zone above-zone" d="M 0,0
-                           L 100,0 50,50
-                           z" fill="rgba(0,127,255,0.5)" />
-                </svg>
+          #below-zone {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            clip-path: polygon(0 100%, var(--top-left) var(--bottom-right), var(--bottom-right) var(--bottom-right), 100% 100%);
+            border-bottom: 5px solid lightgray;
+            background-color: orange;
+          }
 
-                <svg viewbox="0 0 50 100" preserveAspectRatio="xMinYMid">
-                    <path class="drop-zone before-zone" d="M 0,0
-                            L 50,50 0,100
-                            z" fill="rgba(255,0,127,0.5)" />
-                </svg>
+          #after-zone {
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            clip-path: polygon(100% 0, var(--bottom-right) var(--top-left), var(--bottom-right) var(--bottom-right), 100% 100%);
+            border-right: 5px solid lightgray;
+            background-color: red;
+          }
 
-                <svg viewbox="0 0 50 100" preserveAspectRatio="xMaxYMid">
-                    <path class="drop-zone after-zone" d="M 50,0
-                           L 50,100 0,50
-                           z" fill="rgba(0,255,127,0.5)" />
-                </svg>
+          #before-zone.v-drag-over-target,
+          #above-zone.v-drag-over-target,
+          #below-zone.v-drag-over-target,
+          #after-zone.v-drag-over-target {
+            opacity: 0.9;
+          }
+          
+          #before-zone.v-drag-over-target {
+            border-left: 5px solid rgba(127, 127, 255, 0.3);
+          }
 
-                <svg viewbox="0 0 100 50" preserveAspectRatio="xMidYMax">
-                    <path class="drop-zone below-zone" d="M 0,50
-                           L 50,0 100,50
-                           z" fill="rgba(255,127,0,0.5)" />
-                </svg>
+          #above-zone.v-drag-over-target {
+            border-top: 5px solid rgba(127, 127, 255, 0.3);
+          }
 
-            </svg>
+          #below-zone.v-drag-over-target {
+            border-bottom: 5px solid rgba(127, 127, 255, 0.3);
+          }
+
+          #after-zone.v-drag-over-target {
+            border-right: 5px solid rgba(127, 127, 255, 0.3);
+          }
+        `}constructor(){super(),console.log("HERE I WAS")}render(){return html$1`
+            <div id="around-overlay">
+                <div id="before-zone" class="drop-zone"></div>
+                <div id="above-zone" class="drop-zone"></div>
+                <div id="below-zone" class="drop-zone"></div>
+                <div id="after-zone" class="drop-zone"></div>
+            </div>
         `}}customElements.define("around-drop-target-overlay",AroundDropTargetOverlay);const addCssBlock=function(n,i=!1){const t=document.createElement("template");t.innerHTML=n,document.head[i?"insertBefore":"appendChild"](t.content,document.head.firstChild)};export{addCssBlock};

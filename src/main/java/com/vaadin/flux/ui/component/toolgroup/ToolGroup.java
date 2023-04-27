@@ -1,6 +1,5 @@
 package com.vaadin.flux.ui.component.toolgroup;
 
-
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.HasSize;
@@ -15,8 +14,9 @@ import com.vaadin.flux.ui.component.closetab.CloseTab;
 import com.vaadin.flux.ui.component.closetab.CloseTabs;
 import com.vaadin.flux.ui.component.split.Split;
 import com.vaadin.flux.ui.component.split.SplitItem;
-import com.vaadin.flux.ui.dragdrop.overlay.BeforeAfterDropTargetOverlay;
 import com.vaadin.flux.ui.dragdrop.DragDropKit;
+import com.vaadin.flux.ui.dragdrop.overlay.AroundDropTargetOverlay;
+import com.vaadin.flux.ui.dragdrop.overlay.BeforeAfterDropTargetOverlay;
 import com.vaadin.flux.ui.dragdrop.overlay.OntoDropTargetOverlay;
 
 import java.util.Arrays;
@@ -46,6 +46,8 @@ import java.util.Arrays;
  * </pre>
  */
 public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSize {
+    private static final String VISIBILITY_CLASS_NAME = "onto-drop-target-toolgroup";
+
     private final CloseTabs closeTabs;
     private final FlexLayout actionBar;
     private final Div toolContent;
@@ -86,6 +88,14 @@ public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSi
         content.setFlexDirection(FlexLayout.FlexDirection.COLUMN);
         content.add(dragBar);
         content.add(toolContent);
+
+
+        AroundDropTargetOverlay.initForMoveDrop(this,
+                DragBar.class, VISIBILITY_CLASS_NAME,
+                this::splitLeftward,
+                this::splitUpward,
+                this::splitDownward,
+                this::splitRightward);
     }
 
     public ToolGroup(Tool... tools) {
@@ -109,6 +119,22 @@ public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSi
                 .forEach(closeTabs::add);
     }
 
+    private void splitLeftward(Component component) {
+        // TODO requires implementation of "drag proxies" so a ToolGroup is provided here
+    }
+
+    private void splitUpward(Component component) {
+        // TODO requires implementation of "drag proxies" so a ToolGroup is provided here
+    }
+
+    private void splitDownward(Component component) {
+        // TODO requires implementation of "drag proxies" so a ToolGroup is provided here
+    }
+
+    private void splitRightward(Component component) {
+        // TODO requires implementation of "drag proxies" so a ToolGroup is provided here
+    }
+
     private void split(ToolGroup toolGroup) {
         getParent().ifPresent(System.out::println);
         getParent()
@@ -127,8 +153,9 @@ public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSi
         private static final String VISIBILITY_CLASS_NAME = "onto-drop-target-toolbar";
 
         public DragBar() {
-            addClassNames(VISIBILITY_CLASS_NAME);
-
+            // TODO implement "drag proxies" so entire ToolGroup is moved, not just its DragBar
+//            DragDropKit.initForMoveDrag(this, ToolGroup.this, ToolGroup.VISIBILITY_CLASS_NAME);
+            DragDropKit.initForMoveDrag(this, ToolGroup.VISIBILITY_CLASS_NAME);
             OntoDropTargetOverlay.initForMoveDrop(this, ToolTab.class,
                     VISIBILITY_CLASS_NAME, this::addTab);
         }

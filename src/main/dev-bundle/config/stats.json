@@ -255,7 +255,7 @@
   "Frontend/src/around-drop-target-overlay.ts"
  ],
  "frontendHashes": {
-  "src/around-drop-target-overlay.ts": "e297df9ad3a962b0596b10377b5576111c4eeff9c92cfaec3cea924c3c5251a1",
+  "src/around-drop-target-overlay.ts": "15c728c7a044df83bc933ecf8376f7206c83a18c18ae774757a5b1aae6bb00d7",
   "comboBoxConnector.js": "1d004c3dae9c76f8bcc68678abe1b8f7bdc8b456f5c9c4c7f190df8ed25d66cd",
   "contextMenuConnector.js": "25a200f8086461635ddd92316ebeb5a868294c8650a190efbae120edb1088f4f",
   "contextMenuTargetConnector.js": "870f67643988dd5618c247bd3c28d843f70aa026ee89f44c3c7556b5e70856af",
@@ -281,7 +281,7 @@
   "flux": "{\n  \"lumoImports\" : [ \"typography\", \"color\", \"spacing\", \"badge\", \"utility\" ]\n}"
  },
  "entryScripts": [
-  "VAADIN/build/indexhtml-b1f4b79b.js"
+  "VAADIN/build/indexhtml-f79ae6ff.js"
  ],
  "webComponents": [],
  "packageJsonHash": "dc4ed1948e335019ca19fb8dde48f58266bb3b5796934c011779c53d6e803ac1"
