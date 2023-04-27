@@ -55,11 +55,11 @@ public class AboveBelowDropTargetOverlay extends AbstractDropTargetOverlay {
         belowDiv.setWidthFull();
         belowDiv.setHeight("40%");
 
-        var overlay = getContent();
-        overlay.setFlexDirection(FlexLayout.FlexDirection.COLUMN);
-        overlay.setSizeFull();
-        overlay.add(aboveDiv);
-        overlay.add(belowDiv);
+        var content = getContent();
+        content.setFlexDirection(FlexLayout.FlexDirection.COLUMN);
+        content.setSizeFull();
+        content.add(aboveDiv);
+        content.add(belowDiv);
 
         addDropZone(new DropZone(aboveDiv, aboveConsumer));
         addDropZone(new DropZone(belowDiv, belowConsumer));

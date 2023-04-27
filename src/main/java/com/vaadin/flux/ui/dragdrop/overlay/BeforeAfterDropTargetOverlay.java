@@ -52,10 +52,10 @@ public class BeforeAfterDropTargetOverlay extends AbstractDropTargetOverlay {
         afterDiv.setHeightFull();
         afterDiv.setWidth("40%");
 
-        var overlay = getContent();
-        overlay.setSizeFull();
-        overlay.add(beforeDiv);
-        overlay.add(afterDiv);
+        var content = getContent();
+        content.setSizeFull();
+        content.add(beforeDiv);
+        content.add(afterDiv);
 
         addDropZone(new DropZone(beforeDiv, beforeConsumer));
         addDropZone(new DropZone(afterDiv, afterConsumer));

@@ -106,12 +106,12 @@ public class AroundOntoDropTargetOverlay extends AbstractDropTargetOverlay {
         bottom.add(belowDiv);
         bottom.add(bottomRightDiv);
 
-        var overlay = getContent();
-        overlay.setFlexDirection(FlexLayout.FlexDirection.COLUMN);
-        overlay.setSizeFull();
-        overlay.add(top);
-        overlay.add(middle);
-        overlay.add(bottom);
+        var content = getContent();
+        content.setFlexDirection(FlexLayout.FlexDirection.COLUMN);
+        content.setSizeFull();
+        content.add(top);
+        content.add(middle);
+        content.add(bottom);
 
         addDropZone(new DropZone(aboveDiv, aboveConsumer));
         addDropZone(new DropZone(beforeDiv, beforeConsumer));

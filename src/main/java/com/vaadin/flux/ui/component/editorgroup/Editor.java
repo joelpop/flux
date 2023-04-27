@@ -1,13 +1,13 @@
 package com.vaadin.flux.ui.component.editorgroup;
 
 import com.vaadin.flow.component.Composite;
-import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.orderedlayout.FlexLayout;
 
 import java.util.Collections;
 import java.util.List;
 
-public abstract class Editor extends Composite<Div> {
+public abstract class Editor extends Composite<FlexLayout> {
     private final String name;
     private final Icon icon;
     private final transient List<EditorAction> editorActions;
@@ -17,6 +17,8 @@ public abstract class Editor extends Composite<Div> {
         this.icon = icon;
 
         this.editorActions = List.of(editorActions);
+
+        getContent().setFlexDirection(FlexLayout.FlexDirection.COLUMN);
     }
 
     protected Editor(String name, EditorAction... editorActions) {

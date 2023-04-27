@@ -2,12 +2,12 @@ package com.vaadin.flux.ui.component.toolgroup;
 
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.HasSize;
-import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.orderedlayout.FlexLayout;
 
 import java.util.List;
 
-public abstract class Tool extends Composite<Div> implements HasSize {
+public abstract class Tool extends Composite<FlexLayout> implements HasSize {
     private final String name;
     private final Icon icon;
     private final String helpText;
@@ -19,6 +19,8 @@ public abstract class Tool extends Composite<Div> implements HasSize {
         this.helpText = helpText;
 
         this.toolActions = List.of(toolActions);
+
+        getContent().setFlexDirection(FlexLayout.FlexDirection.COLUMN);
     }
 
     protected Tool(String name, Icon icon, ToolAction... toolActions) {

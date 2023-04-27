@@ -1,5 +1,5 @@
 /*
- * before-after-drop-target.css
+ * before-after-drop-target-overlay.css
  */
 
 .before-after-drop-target-overlay {
@@ -18,22 +18,21 @@
 }
 
 .before-after-drop-target-overlay .before-after-drop-zone.v-drag-over-target {
-    /*background-color: rgba(0,0,0,0.05);*/
-    background-color: transparent;
+    background-color: rgba(127,127,127,0.05);
 }
 
 .before-after-drop-target-overlay .before-after-drop-zone.before-zone {
-    border-left: 2px solid rgba(0,0,0,0.05);
+    border-left: 3px solid rgba(0,0,0,0.05);
 }
 
 .before-after-drop-target-overlay .before-after-drop-zone.before-zone.v-drag-over-target {
-    border-left: 2px solid var(--lumo-primary-color);
+    border-left: 3px solid var(--lumo-primary-color);
 }
 
 .before-after-drop-target-overlay .before-after-drop-zone.after-zone {
-    border-right: 2px solid rgba(0,0,0,0.05);
+    border-right: 3px solid rgba(0,0,0,0.05);
 }
 
 .before-after-drop-target-overlay .before-after-drop-zone.after-zone.v-drag-over-target {
-    border-right: 2px solid var(--lumo-primary-color);
+    border-right: 3px solid var(--lumo-primary-color);
 }
