@@ -44,7 +44,7 @@ import java.util.Arrays;
  * +--------------------------------------------------------------------------------------------+
  * </pre>
  */
-public class EditorGroup extends Composite<FlexLayout> implements SplitItem, HasSize {
+public class EditorGroup extends SplitItem<FlexLayout> implements HasSize {
     private final CloseTabs closeTabs;
     private final FlexLayout actionBar;
     private final FlexLayout editorContent;

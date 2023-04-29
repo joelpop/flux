@@ -1,22 +1,24 @@
 package com.vaadin.flux.ui.component.split;
 
+import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.splitlayout.SplitLayout;
 
-public interface SplitItem {
+public class SplitItem<C extends Component> extends Composite<C> {
 
-    default SplitItem splitUpward(SplitItem splitItem) {
+    public Split splitUpward(SplitItem<?> splitItem) {
         return new Split(splitItem, this, SplitLayout.Orientation.VERTICAL);
     }
 
-    default SplitItem splitLeftward(SplitItem splitItem) {
+    public Split splitLeftward(SplitItem<?> splitItem) {
         return new Split(splitItem, this, SplitLayout.Orientation.HORIZONTAL);
     }
 
-    default SplitItem splitRightward(SplitItem splitItem) {
+    public Split splitRightward(SplitItem<?> splitItem) {
         return new Split(this, splitItem, SplitLayout.Orientation.HORIZONTAL);
     }
 
-    default SplitItem splitDownward(SplitItem splitItem) {
+    public Split splitDownward(SplitItem<?> splitItem) {
         return new Split(this, splitItem, SplitLayout.Orientation.VERTICAL);
     }
 }

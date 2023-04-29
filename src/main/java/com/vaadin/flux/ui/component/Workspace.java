@@ -1,6 +1,5 @@
 package com.vaadin.flux.ui.component;
 
-import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.orderedlayout.FlexLayout;
@@ -63,7 +62,7 @@ public class Workspace extends Composite<FlexLayout> implements HasSize {
     public Workspace() {
         EditorGroup editorGroup;
         ToolGroup toolGroup;
-        SplitItem rootSplitItem;
+        SplitItem<?> rootSplitItem;
 
         editorGroup = new EditorGroup();
         editorGroup.setSizeFull();
@@ -97,8 +96,6 @@ public class Workspace extends Composite<FlexLayout> implements HasSize {
         rootSplitItem = rootSplitItem.splitLeftward(toolGroup.splitDownward(toolGroup2));
 
         var content = getContent();
-        if (rootSplitItem instanceof Component component) {
-            content.add(component);
-        }
+        content.add(rootSplitItem);
     }
 }

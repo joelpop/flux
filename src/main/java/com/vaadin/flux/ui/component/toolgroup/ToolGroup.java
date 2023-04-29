@@ -45,7 +45,7 @@ import java.util.Arrays;
  * +--------------------------------------------------------------------------------------------+
  * </pre>
  */
-public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSize {
+public class ToolGroup extends SplitItem<FlexLayout> implements HasSize {
     private static final String VISIBILITY_CLASS_NAME = "onto-drop-target-toolgroup";
 
     private final CloseTabs closeTabs;
