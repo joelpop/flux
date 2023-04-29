@@ -11,40 +11,24 @@ import java.util.function.Consumer;
 
 /**
  * <pre>
- * wide
- * +-----------------------------------------------+
- * |\                                             /|
- * | \                                           / |
- * |  \                                         /  |
- * |   \                                       /   |
- * |    \_____________________________________/    |
- * |    /                                     \    |
- * |   /                                       \   |
- * |  /                                         \  |
- * | /                                           \ |
- * |/                                             \|
- * +-----------------------------------------------+
- *
- * tall
- * +-----------+
- * |\         /|
- * | \       / |
- * |  \     /  |
- * |   \   /   |
- * |    \ /    |
- * |     |     |
- * |     |     |
- * |     |     |
- * |     |     |
- * |     |     |
- * |     |     |
- * |     |     |
- * |    / \    |
- * |   /   \   |
- * |  /     \  |
- * | /       \ |
- * |/         \|
- * +-----------+
+ * wide                     tall
+ * +--------------------+   +-----------+
+ * |\                  /|   |\         /|
+ * | \                / |   | \       / |
+ * |  \              /  |   |  \     /  |
+ * |   \            /   |   |   \   /   |
+ * |    \__________/    |   |    \ /    |
+ * |    /          \    |   |     |     |
+ * |   /            \   |   |     |     |
+ * |  /              \  |   |     |     |
+ * | /                \ |   |     |     |
+ * |/                  \|   |     |     |
+ * +--------------------+   |    / \    |
+ *                          |   /   \   |
+ *                          |  /     \  |
+ *                          | /       \ |
+ *                          |/         \|
+ *                          +-----------+
  * </pre>
  */
 public class AroundDropTargetOverlay extends AbstractDropTargetOverlay {
@@ -96,13 +80,16 @@ public class AroundDropTargetOverlay extends AbstractDropTargetOverlay {
 
     private void onAroundDropTargetOverlayAttach(AttachEvent attachEvent) {
         attachEvent.getUI().getPage().executeJs("""
+                  $0.style.setProperty('--around-overlay-min-dim', '100');
                   new ResizeObserver(entries => {
                     for (const entry of entries) {
                       const { width, height } = entry.contentRect;
+                      console.log('>>>>> ' + $0.parentElement.tagName + ': ' + width + 'x' + height);
                       entry.target.style.setProperty('--around-overlay-min-dim', Math.min(width, height));
                     }
                   }).observe($0);
                 """, this.getElement());
+        // TODO call the above when attaching, not just when resizing
     }
 
     /**

@@ -50,7 +50,7 @@ public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSi
 
     private final CloseTabs closeTabs;
     private final FlexLayout actionBar;
-    private final Div toolContent;
+    private final FlexLayout toolContent;
 
     public ToolGroup() {
         super();
@@ -81,7 +81,7 @@ public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSi
         dragBar.add(closeTabs);
         dragBar.add(iconBar);
 
-        toolContent = new Div();
+        toolContent = new FlexLayout();
         toolContent.setSizeFull();
 
         var content = getContent();
@@ -120,19 +120,19 @@ public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSi
     }
 
     private void splitLeftward(Component component) {
-        // TODO requires implementation of "drag proxies" so a ToolGroup is provided here
+        // TODO requires implementation of "drag proxies" so a ToolGroup will be provided here
     }
 
     private void splitUpward(Component component) {
-        // TODO requires implementation of "drag proxies" so a ToolGroup is provided here
+        // TODO requires implementation of "drag proxies" so a ToolGroup will be provided here
     }
 
     private void splitDownward(Component component) {
-        // TODO requires implementation of "drag proxies" so a ToolGroup is provided here
+        // TODO requires implementation of "drag proxies" so a ToolGroup will be provided here
     }
 
     private void splitRightward(Component component) {
-        // TODO requires implementation of "drag proxies" so a ToolGroup is provided here
+        // TODO requires implementation of "drag proxies" so a ToolGroup will be provided here
     }
 
     private void split(ToolGroup toolGroup) {
@@ -157,10 +157,10 @@ public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSi
 //            DragDropKit.initForMoveDrag(this, ToolGroup.this, ToolGroup.VISIBILITY_CLASS_NAME);
             DragDropKit.initForMoveDrag(this, ToolGroup.VISIBILITY_CLASS_NAME);
             OntoDropTargetOverlay.initForMoveDrop(this, ToolTab.class,
-                    VISIBILITY_CLASS_NAME, this::addTab);
+                    VISIBILITY_CLASS_NAME, this::addOnto);
         }
 
-        private void addTab(Component component) {
+        private void addOnto(Component component) {
             if (component instanceof ToolTab toolTab) {
                 ToolGroup.this.closeTabs.add(toolTab);
             }
@@ -179,14 +179,14 @@ public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSi
             DragDropKit.initForMoveDrag(this, VISIBILITY_CLASS_NAME);
             DragDropKit.initForMoveDrag(this, DragBar.VISIBILITY_CLASS_NAME);
             BeforeAfterDropTargetOverlay.initForMoveDrop(this, ToolTab.class,
-                    VISIBILITY_CLASS_NAME, this::insertBefore, this::insertAfter);
+                    VISIBILITY_CLASS_NAME, this::addBefore, this::addAfter);
         }
 
         public Tool getTool() {
             return tool;
         }
 
-        private void insertBefore(Component component) {
+        private void addBefore(Component component) {
             if (component instanceof ToolTab toolTab) {
                 System.out.println("INDEX: " + closeTabs.indexOf(this));
                 System.out.println("Insert " + toolTab.tool.getName() + " before " + tool.getName());
@@ -198,7 +198,7 @@ public class ToolGroup extends Composite<FlexLayout> implements SplitItem, HasSi
             }
         }
 
-        private void insertAfter(Component component) {
+        private void addAfter(Component component) {
             if (component instanceof ToolTab toolTab) {
                 System.out.println("INDEX: " + closeTabs.indexOf(this) + 1);
                 System.out.println("Insert " + toolTab.tool.getName() + " after " + tool.getName());

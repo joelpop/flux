@@ -65,7 +65,6 @@ public class CloseTab extends Tab {
 
     public void setClosePosition(ClosePosition closePosition) {
         closeWrapper.setClosePosition(closePosition);
-
     }
 
     @Override

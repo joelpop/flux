@@ -6,7 +6,6 @@ import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
-import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.FlexLayout;
@@ -48,7 +47,7 @@ import java.util.Arrays;
 public class EditorGroup extends Composite<FlexLayout> implements SplitItem, HasSize {
     private final CloseTabs closeTabs;
     private final FlexLayout actionBar;
-    private final Div editorContent;
+    private final FlexLayout editorContent;
 
     public EditorGroup() {
         super();
@@ -79,7 +78,8 @@ public class EditorGroup extends Composite<FlexLayout> implements SplitItem, Has
         dragBar.add(closeTabs);
         dragBar.add(iconBar);
 
-        editorContent = new Div();
+        editorContent = new FlexLayout();
+        editorContent.setSizeFull();
 
         var content = getContent();
         content.setFlexDirection(FlexLayout.FlexDirection.COLUMN);
@@ -127,10 +127,10 @@ public class EditorGroup extends Composite<FlexLayout> implements SplitItem, Has
 
         public DragBar() {
             OntoDropTargetOverlay.initForMoveDrop(this, EditorTab.class,
-                    VISIBILITY_CLASS_NAME, this::addTab);
+                    VISIBILITY_CLASS_NAME, this::addOnto);
         }
 
-        private void addTab(Component component) {
+        private void addOnto(Component component) {
             if (component instanceof EditorTab editorTab) {
                 EditorGroup.this.closeTabs.add(editorTab);
             }
@@ -149,14 +149,14 @@ public class EditorGroup extends Composite<FlexLayout> implements SplitItem, Has
             DragDropKit.initForMoveDrag(this, VISIBILITY_CLASS_NAME);
             DragDropKit.initForMoveDrag(this, DragBar.VISIBILITY_CLASS_NAME);
             BeforeAfterDropTargetOverlay.initForMoveDrop(this, EditorTab.class,
-                    VISIBILITY_CLASS_NAME, this::insertBefore, this::insertAfter);
+                    VISIBILITY_CLASS_NAME, this::addBefore, this::addAfter);
         }
 
         public Editor getEditor() {
             return editor;
         }
 
-        private void insertBefore(Component component) {
+        private void addBefore(Component component) {
             if (component instanceof EditorTab editorTab) {
                 System.out.println("INDEX: " + closeTabs.indexOf(this));
                 System.out.println("Insert " + editorTab.editor.getName() + " before " + editor.getName());
@@ -168,7 +168,7 @@ public class EditorGroup extends Composite<FlexLayout> implements SplitItem, Has
             }
         }
 
-        private void insertAfter(Component component) {
+        private void addAfter(Component component) {
             if (component instanceof EditorTab editorTab) {
                 System.out.println("INDEX: " + closeTabs.indexOf(this) + 1);
                 System.out.println("Insert " + editorTab.editor.getName() + " after " + editor.getName());

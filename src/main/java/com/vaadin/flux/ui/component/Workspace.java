@@ -4,8 +4,8 @@ import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.orderedlayout.FlexLayout;
-import com.vaadin.flux.ui.component.editor.SourceEditor;
-import com.vaadin.flux.ui.component.editor.VisualEditor;
+import com.vaadin.flux.ui.component.editor.source.SourceEditor;
+import com.vaadin.flux.ui.component.editor.visual.VisualEditor;
 import com.vaadin.flux.ui.component.editorgroup.EditorGroup;
 import com.vaadin.flux.ui.component.split.SplitItem;
 import com.vaadin.flux.ui.component.toolgroup.ToolGroup;
@@ -67,10 +67,8 @@ public class Workspace extends Composite<FlexLayout> implements HasSize {
 
         editorGroup = new EditorGroup();
         editorGroup.setSizeFull();
-        editorGroup.add(new VisualEditor("MainView",
-                "(a canvas for visually editing the Main view)"));
-        editorGroup.add(new VisualEditor("HelloView",
-                "(a canvas for visually editing the Hello view)"));
+        editorGroup.add(new VisualEditor("MainView"));
+        editorGroup.add(new VisualEditor("HelloView"));
         editorGroup.add(new SourceEditor("onSayHello",
                 "(a source code editor for the \"onSayHello\" button click action)"));
 

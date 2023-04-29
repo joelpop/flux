@@ -18,7 +18,9 @@ public abstract class Editor extends Composite<FlexLayout> {
 
         this.editorActions = List.of(editorActions);
 
-        getContent().setFlexDirection(FlexLayout.FlexDirection.COLUMN);
+        var content = getContent();
+        content.setSizeFull();
+        content.setFlexDirection(FlexLayout.FlexDirection.COLUMN);
     }
 
     protected Editor(String name, EditorAction... editorActions) {
