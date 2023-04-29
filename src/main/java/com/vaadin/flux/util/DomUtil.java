@@ -40,7 +40,7 @@ public final class DomUtil extends LibraryClass {
                     }
                     
                     if (!found) {
-                        // TODO which stylesheet to use?
+                        // TODO find out if there is a more preferable stylesheet to use
 //                                    document.styleSheets[styleSheetMaxNum - 1].insertRule($0 + '{' + $1 + ':' + $2 + ';}');
                         document.styleSheets[0].insertRule($0 + '{' + $1 + ':' + $2 + ';}');
                     }

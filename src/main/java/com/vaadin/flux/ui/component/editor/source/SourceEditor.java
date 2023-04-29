@@ -1,4 +1,4 @@
-package com.vaadin.flux.ui.component.editor;
+package com.vaadin.flux.ui.component.editor.source;
 
 import com.vaadin.flux.ui.component.editorgroup.Editor;
 

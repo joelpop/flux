@@ -19,5 +19,4 @@ public interface SplitItem {
     default SplitItem splitDownward(SplitItem splitItem) {
         return new Split(this, splitItem, SplitLayout.Orientation.VERTICAL);
     }
-
 }

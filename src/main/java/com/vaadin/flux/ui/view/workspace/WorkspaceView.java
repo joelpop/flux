@@ -9,8 +9,6 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flux.ui.component.Workspace;
 import com.vaadin.flux.ui.component.dock.Dock;
 import com.vaadin.flux.ui.component.dock.DockItem;
-import com.vaadin.flux.ui.component.dock.HorizontalDock;
-import com.vaadin.flux.ui.component.dock.VerticalDock;
 
 /**
  *
@@ -60,16 +58,16 @@ public class WorkspaceView extends Composite<VerticalLayout> {
     private final HorizontalLayout statusBar;
 
     public WorkspaceView() {
-        topDock = new VerticalDock();
+        topDock = new Dock().asVertical();
         topDock.setWidthFull();
 
-        leftDock = new HorizontalDock();
+        leftDock = new Dock().asHorizontal();
         leftDock.setHeightFull();
 
         workspace = new Workspace();
         workspace.setSizeFull();
 
-        rightDock = new HorizontalDock();
+        rightDock = new Dock().asHorizontal();
         rightDock.setHeightFull();
 
         var center = new HorizontalLayout();
@@ -79,7 +77,7 @@ public class WorkspaceView extends Composite<VerticalLayout> {
         center.add(workspace);
         center.add(rightDock);
 
-        bottomDock = new VerticalDock();
+        bottomDock = new Dock().asVertical();
         bottomDock.setWidthFull();
 
         statusBar = new HorizontalLayout();

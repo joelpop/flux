@@ -29,6 +29,7 @@ import com.vaadin.flow.component.splitlayout.SplitLayoutVariant;
 public class Split extends Composite<SplitLayout> implements SplitItem, HasSize {
 
     public Split(SplitItem primarySplitItem, SplitItem secondarySplitItem, SplitLayout.Orientation orientation) {
+        // TODO see if SplitItem can be converted from an interface to a class extending Composite
         if (!(primarySplitItem instanceof Component primaryComponent)) {
             throw new IllegalArgumentException("primarySplitItem must be a Component");
         }
