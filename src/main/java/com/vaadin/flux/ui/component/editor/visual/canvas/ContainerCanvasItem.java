@@ -1,7 +1,6 @@
 package com.vaadin.flux.ui.component.editor.visual.canvas;
 
 import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.HasOrderedComponents;
 import com.vaadin.flow.component.orderedlayout.FlexLayout;
 import com.vaadin.flow.theme.lumo.LumoUtility;
 

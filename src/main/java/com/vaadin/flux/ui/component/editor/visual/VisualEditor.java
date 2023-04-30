@@ -2,7 +2,10 @@ package com.vaadin.flux.ui.component.editor.visual;
 
 import com.vaadin.flux.ui.component.editor.visual.canvas.CanvasItemCompartment;
 import com.vaadin.flux.ui.component.editor.visual.canvas.VoidContentCanvasItem;
-import com.vaadin.flux.ui.component.editor.visual.canvas.content.*;
+import com.vaadin.flux.ui.component.editor.visual.canvas.content.AccordionCanvasItem;
+import com.vaadin.flux.ui.component.editor.visual.canvas.content.ButtonCanvasItem;
+import com.vaadin.flux.ui.component.editor.visual.canvas.content.DetailsCanvasItem;
+import com.vaadin.flux.ui.component.editor.visual.canvas.content.TabsCanvasItem;
 import com.vaadin.flux.ui.component.editorgroup.Editor;
 
 public class VisualEditor extends Editor {
@@ -15,16 +18,15 @@ public class VisualEditor extends Editor {
         var canvasItemCompartment = new CanvasItemCompartment();
 
 
-        var iconCanvasItem = new IconCanvasItem();
-        var textFieldCanvasItem = new TextFieldCanvasItem();
+        var accordionCanvasItem = new AccordionCanvasItem();
         var buttonCanvasItem = new ButtonCanvasItem();
-        var tabCanvasItem = new TabCanvasItem();
-        var closeTabsCanvasItem = new CloseTabsCanvasItem();
-        canvasItemCompartment.addAfter(new VoidContentCanvasItem(), textFieldCanvasItem);
-        textFieldCanvasItem.addBelow(buttonCanvasItem);
-        textFieldCanvasItem.addBefore(iconCanvasItem);
-        buttonCanvasItem.addBefore(tabCanvasItem);
-        buttonCanvasItem.addBefore(closeTabsCanvasItem);
+        var tabsCanvasItem = new TabsCanvasItem();
+        var detailsCanvasItem = new DetailsCanvasItem();
+
+        canvasItemCompartment.addBelow(new VoidContentCanvasItem(), accordionCanvasItem);
+        accordionCanvasItem.addBelow(tabsCanvasItem);
+        tabsCanvasItem.addBelow(detailsCanvasItem);
+        detailsCanvasItem.addBelow(buttonCanvasItem);
 
 
         var content = getContent();

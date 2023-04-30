@@ -2,7 +2,6 @@ package com.vaadin.flux.ui.component.editorgroup;
 
 
 import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;

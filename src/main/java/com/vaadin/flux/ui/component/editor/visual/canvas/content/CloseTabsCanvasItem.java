@@ -7,6 +7,8 @@ import com.vaadin.flux.ui.component.editor.visual.canvas.ContentCanvasItem;
 public class CloseTabsCanvasItem extends ContentCanvasItem<CloseTabs> {
 
     public CloseTabsCanvasItem() {
-        getContent().add(new CloseTab("CloseTab"));
+        getContent().add(new CloseTab("CloseTab 1"));
+        getContent().add(new CloseTab("CloseTab 2"));
+        getContent().add(new CloseTab("CloseTab 3"));
     }
 }

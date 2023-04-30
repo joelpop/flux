@@ -89,7 +89,7 @@ public class AroundDropTargetOverlay extends AbstractDropTargetOverlay {
                     }
                   }).observe($0);
                 """, this.getElement());
-        // TODO call the above when attaching, not just when resizing
+        // TODO call the above when attaching, not just when resizing?
     }
 
     /**
